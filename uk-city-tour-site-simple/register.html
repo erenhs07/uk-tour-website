@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registration form for UK City Tour updates and offers.">
+  <meta name="keywords" content="register, booking updates, travel offers">
+  <title>UK City Tour - Register</title>
+  <link rel="stylesheet" href="assets/css/register.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html"><img src="assets/images/logo.svg" alt="UK City Tour logo"></a>
+  <h1>UK City Tour</h1>
+  <p>Simple and helpful city tours around the United Kingdom.</p>
+  <button id="menuButton" type="button">Show or hide menu</button>
+  <nav aria-label="Main navigation">
+    <ul id="menuList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tours.html">Tours and Prices</a></li>
+      <li><a href="branches.html">Branches</a></li>
+      <li><a href="news.html">Daily News</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Register for updates and offers</h2>
+    <p class="notice">Please fill in for any inquiries.</p>
+
+    <form id="registerForm" novalidate>
+      <label for="fullName">Full name</label>
+      <input type="text" id="fullName" name="fullName">
+      <p id="nameError" class="error"></p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <p id="emailError" class="error"></p>
+
+      <label for="tourChoice">Preferred tour</label>
+      <select id="tourChoice" name="tourChoice">
+        <option value="">Select a tour</option>
+        <option value="London Historical Tour">London Historical Tour</option>
+        <option value="Edinburgh Castle Tour">Edinburgh Castle Tour</option>
+        <option value="York Viking Experience">York Viking Experience</option>
+      </select>
+      <p id="tourError" class="error"></p>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <label for="agree">I agree to be contacted</label>
+      <input type="checkbox" id="agree" name="agree" style="width:auto;">
+      <p id="agreeError" class="error"></p>
+
+      <button type="submit">Submit</button>
+      <p id="result"></p>
+    </form>
+  </section>
+</main>
+
+<aside>
+  <h2>Useful resources</h2>
+  <ul>
+    <li><a href="https://www.visitbritain.org" target="_blank" rel="noopener">VisitBritain</a></li>
+    <li><a href="https://www.visitlondon.com" target="_blank" rel="noopener">Visit London</a></li>
+    <li><a href="https://www.visitscotland.com" target="_blank" rel="noopener">VisitScotland</a></li>
+    <li><a href="https://www.nationaltrust.org.uk" target="_blank" rel="noopener">National Trust</a></li>
+  </ul>
+
+  <h2>Quick information</h2>
+  <p>We offer cultural tours, history tours and scenic trips. Customers can register to hear about offers and events.</p>
+</aside>
+
+
+<footer>
+  <p>Copyright 2026 UK City Tour</p>
+</footer>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/register.js"></script>
+</body>
+</html>
